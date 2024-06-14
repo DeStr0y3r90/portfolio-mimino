@@ -1,0 +1,191 @@
+<!-- * <<<=============== Modal window Book Table ===================>>>* -->
+
+<div class="modal" data-modal="2">
+	<div class="modal-content">
+		<button class="modal-close-btn js-modal-close" type="button">
+			<svg class="icon-x" width="18" height="18">
+				<use href="./img/icons.svg#icon-close"></use>
+			</svg>
+		</button>
+		<p class="title-modal"><strong>BOOK A TABLE</strong></p>
+		<form class="modal-form">
+			<div class="fixed">
+				<div class="modal-position-icon">
+					<input class="modal-input" id="user-name" type="text" name="name" placeholder="Enter your name"
+						pattern="[A-Za-zА-Яа-яЁё]{2,20}" required />
+					<label for="user-name" class="form-lable"><span class="label-title">Enter your name for booking</span></label>
+				</div>
+				<div class="modal-position-icon">
+					<input class="modal-input" id="user-tel" type="tel" name="tel" placeholder="+38 (___) ___-__-__"
+						pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" required />
+					<label for="user-tel" class="form-lable"><span class="label-title">Phone number</span></label>
+				</div>
+			</div>
+			<div class="fixed">
+				<div class="modal-position-icon">
+					<div class="select-icon-position">
+						<select class="modal-input modal-select select" id="number" name="number">
+							<option value="2" selected>2</option>
+							<option value="5">5</option>
+							<option value="10">10</option>
+							<option value="15">15</option>
+						</select>
+					</div>
+					<label for="number" class="form-lable"><span class="label-title">A table for how many people?</span></label>
+				</div>
+				<div class="modal-position-icon select-position">
+					<div class="select-icon-position">
+						<select class="modal-input modal-select select" name="day" id="day">
+							<optgroup label="Today">
+								<option class="option" value="Today" selected>
+									Today
+								</option>
+								<option class="option" value="Tomorrow">Tomorrow</option>
+								<option class="option" value="Exact date">
+									Choose another date
+								</option>
+							</optgroup>
+						</select>
+					</div>
+					<label for="day" class="form-lable"><span class="label-title">What date to book?</span></label>
+				</div>
+			</div>
+			<button type="submit" class="modal-form-button js-modal-close">
+				MAKE A BOOKING
+			</button>
+		</form>
+	</div>
+</div>
+
+<!-- * <<<=============== Modal window Book Room ===================>>>* -->
+
+<div class="modal modal-room" data-modal="1">
+	<div class="modal-content">
+		<button class="modal-close-btn-room js-modal-close" type="button">
+			<svg class="icon-x" width="18" height="18">
+				<use href="./img/icons.svg#icon-close"></use>
+			</svg>
+		</button>
+		<p class="title-modal-room"><strong>BOOK A ROOM</strong></p>
+		<form class="modal-form-room">
+			<div class="fixed-room-room">
+				<div class="contact">
+					<div class="modal-position-room">
+						<input class="modal-input-room" id="user-name-room" type="text" name="name" placeholder="Your name"
+							pattern="[A-Za-zА-Яа-яЁё]{2,20}" required />
+						<label for="user-name-room" class="form-lable-room"><span class="label-title-room">Enter your name for
+								booking</span></label>
+					</div>
+					<div class="modal-position-room">
+						<input class="modal-input-room" id="user-tel-room" type="tel" name="tel" placeholder="+38 (___) ___-__-__"
+							pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" required />
+						<label for="user-tel-room" class="form-lable-room"><span class="label-title-room">Phone
+								number</span></label>
+					</div>
+				</div>
+			</div>
+			<div class="fixed-room">
+				<div class="modal-position-room select-position-room lux">
+					<div class="select-icon-position">
+						<select class="modal-input-room modal-select-room select" id="number-room" name="number">
+							<option value="Double Room Deluxe" selected>Double Room Deluxe</option>
+							<option value="Double Room">Double Room</option>
+							<option value="Triple Room">Triple Room</option>
+						</select>
+					</div>
+					<label for="number-room" class="form-lable-room"><span class="label-title-room">Room category</span></label>
+				</div>
+			</div>
+			<div class="fixed-room">
+				<div class="contact">
+					<div class="modal-position-room select-position-room">
+						<div class="select-icon-position">
+							<select class="modal-input-room modal-select-room select" name="day-1" id="day-1">
+								<optgroup label="Today">
+									<option class="option" value="Today" selected>
+										Today
+									</option>
+									<option class="option" value="Tomorrow">Tomorrow</option>
+									<option class="option" value="Exact date">
+										Choose another date
+									</option>
+								</optgroup>
+							</select>
+						</div>
+						<label for="day-1" class="form-lable-room"><span class="label-title-room">Check-in date</span></label>
+					</div>
+					<div class="modal-position-room select-position-room">
+						<div class="select-icon-position">
+							<select class="modal-input-room modal-select-room select" name="day-2" id="day-2">
+								<optgroup label="Сьогодні">
+									<option class="option" value="Today" selected>
+										Today
+									</option>
+									<option class="option" value="Tomorrow">Tomorrow</option>
+									<option class="option" value="Exact date">
+										Choose another date
+									</option>
+								</optgroup>
+							</select>
+						</div>
+						<label for="day-2" class="form-lable-room"><span class="label-title-room">Check-out date</span></label>
+					</div>
+				</div>
+			</div>
+			<button type="submit" class="modal-button-room js-modal-close">
+				MAKE A BOOKING
+			</button>
+		</form>
+	</div>
+</div>
+
+<!-- ====================== Room Price Modal window ======================== -->
+
+<div class="modal modal-container" data-modal="3">
+	<div class="room-modal">
+		<div class="room-hero-modal">
+			<button class="modal-close-button js-modal-close" type="button">
+				<svg class="close-button">
+					<use href="./img/icons.svg#icon-close"></use>
+				</svg>
+			</button>
+			<p class="room-modal-title">ROOM RATES</p>
+			<p class="modal-title">Double Room Deluxe</p>
+
+			<form class="modalform">
+				<label for="select"><span class="modal-input-title">Room category</span><br />
+					<span class="modal-logo-use">
+						<span class="modal-arrow-position">
+							<select class="modal-input-hero modal-input1" name="1" id="select">
+								<option value="1">1</option>
+								<option value="3">3</option>
+								<option value="7">7</option>
+								<option value="14">14</option>
+							</select>
+						</span>
+					</span>
+				</label>
+
+				<label for="room-input-text">
+					<span class="modal-logo-use">
+						<input class="modal-input-hero" id="room-input-text" placeholder="1000" />
+					</span>
+				</label>
+				<ul class="title-room-hero">
+					<li>
+						<p class="room-hero-label-title room-hero-label-title1">
+							Number of nights
+						</p>
+					</li>
+					<li>
+						<p class="room-hero-label-title">UAH</p>
+					</li>
+				</ul>
+
+				<button class="modal-send-btn js-modal-close" type="button">
+					BOOK A ROOM
+				</button>
+			</form>
+		</div>
+	</div>
+</div>
